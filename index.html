@@ -4,200 +4,231 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy - তিথি: বাংলা পঞ্জিকা</title>
+<!-- Google Fonts for Modern Typography -->
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --bg: #FBF7F0;
-    --panel: #FFFFFF;
-    --ink: #2B2320;
-    --ink-soft: #5C5049;
-    --rule: #E4D9C9;
-    --accent: #A44A2E;
-    --accent-soft: #F1E3D3;
+  :root {
+    --bg-gradient: linear-gradient(135deg, #FFF8F5 0%, #F5F0EA 100%);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --primary: #943126; /* Deep Maroon */
+    --primary-light: #FADBD8;
+    --text-main: #2C3E50;
+    --text-muted: #7F8C8D;
+    --border-color: rgba(148, 49, 38, 0.15);
   }
-  *{ box-sizing: border-box; }
-  html,body{ margin:0; padding:0; }
-  body{
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Georgia", "Noto Serif", serif;
+
+  * { box-sizing: border-box; }
+  
+  body {
+    margin: 0; 
+    padding: 0;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    font-family: 'Outfit', 'Hind Siliguri', sans-serif;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
   }
-  .wrap{
-    max-width: 760px;
+
+  /* Fade-in Animation */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .container {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 64px 24px 96px;
+    padding: 60px 24px 100px;
   }
-  header{
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 28px;
-    margin-bottom: 40px;
-  }
-  .eyebrow{
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    font-size: 12px;
-    color: var(--accent);
-    margin: 0 0 10px;
-  }
-  h1{
-    font-size: 34px;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
-  }
-  .meta{
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
-    color: var(--ink-soft);
-  }
-  h2{
-    font-size: 20px;
-    margin: 40px 0 12px;
-    color: var(--accent);
-  }
-  p{
-    margin: 0 0 16px;
-    font-size: 16.5px;
-    color: var(--ink);
-  }
-  ul{
-    margin: 0 0 16px;
-    padding-left: 22px;
-  }
-  li{
-    margin-bottom: 8px;
-    font-size: 16.5px;
-  }
-  .card{
-    background: var(--panel);
-    border: 1px solid var(--rule);
-    border-radius: 10px;
-    padding: 20px 24px;
-    margin: 24px 0;
-  }
-  .contact{
-    background: var(--accent-soft);
-    border-radius: 10px;
-    padding: 24px;
-    margin-top: 48px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-  }
-  .contact h2{ margin-top: 0; }
-  .contact a{
-    color: var(--accent);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid var(--accent);
-  }
-  .contact a:hover{ opacity: 0.8; }
-  footer{
-    margin-top: 56px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 13px;
-    color: var(--ink-soft);
+
+  header {
     text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInUp 0.6s ease-out;
   }
-  strong{ color: var(--ink); }
+
+  .icon-wrap {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-light);
+    border-radius: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(148, 49, 38, 0.1);
+  }
+
+  .icon-wrap svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--primary);
+  }
+
+  h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+  }
+
+  .effective-date {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .section {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 32px 40px;
+    margin-bottom: 24px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out both;
+  }
+
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(148, 49, 38, 0.08);
+  }
+
+  h2 {
+    font-size: 22px;
+    color: var(--primary);
+    margin: 0 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  p {
+    margin: 0 0 16px;
+    font-size: 16px;
+  }
+  
+  p:last-child { margin-bottom: 0; }
+
+  /* Special Highlight Card */
+  .highlight-card {
+    background: linear-gradient(135deg, var(--primary) 0%, #C0392B 100%);
+    color: white;
+    border: none;
+  }
+  .highlight-card h2 { color: white; }
+  .highlight-card p { color: rgba(255,255,255,0.9); }
+
+  .contact-box {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 20px;
+    border-left: 4px solid var(--primary);
+  }
+
+  .contact-box a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .contact-box a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding-top: 30px;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 40px 20px 80px; }
+    .section { padding: 24px; }
+    h1 { font-size: 32px; }
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
 
+<div class="container">
   <header>
-    <p class="eyebrow">Privacy Policy</p>
-    <h1>তিথি &ndash; বাংলা পঞ্জিকা</h1>
-    <p class="meta">Effective date: August 24, 2026</p>
+    <div class="icon-wrap">
+      <!-- Calendar Icon SVG -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5zm2 5h3v3H7v-3zm5 0h3v3h-3v-3zm5 0h3v3h-3v-3z"/>
+      </svg>
+    </div>
+    <h1>তিথি – বাংলা পঞ্জিকা</h1>
+    <div class="effective-date">Effective Date: August 26, 2026</div>
   </header>
 
-  <p>
-    This Privacy Policy explains how <strong>তিথি &ndash; বাংলা পঞ্জিকা</strong>
-    (referred to as "the App", "we", "our", or "us") handles information when you use
-    our application. We built the App to bring the Bengali calendar, auspicious days
-    (shubho din), government holiday lists, and festival dates to your device in a
-    simple and reliable way. Protecting your privacy is important to us, and this
-    policy describes our practices in plain terms.
+  <p class="intro-text">
+    This Privacy Policy explains how <strong>তিথি – বাংলা পঞ্জিকা</strong> ("the App", "we", "our") handles information. Protecting your privacy is our top priority, and this policy describes our practices in plain, transparent terms.
   </p>
 
-  <h2>1. Information We Collect</h2>
-  <div class="card">
-    <p><strong>The App does not collect, store, or transmit any personal information.</strong></p>
-    <p style="margin-bottom:0;">
-      The App does not require you to create an account, log in, or provide any
-      personal details such as your name, email address, phone number, or location
-      in order to use it.
-    </p>
+  <div class="section highlight-card" style="animation-delay: 0.1s;">
+    <h2>1. Zero Data Collection</h2>
+    <p><strong>We do not collect, store, or transmit any personal information.</strong></p>
+    <p>The App does not require you to create an account, log in, or provide any personal details (like name, email, or location). All calendar data is calculated locally on your device.</p>
   </div>
-  <p>
-    All calendar data, holiday information, and festival dates displayed within the
-    App are either bundled with the App itself or calculated locally on your device.
-    We do not have access to how you use the App, and we do not track your activity.
-  </p>
 
-  <h2>2. Permissions</h2>
-  <p>
-    The App may request only the minimum device permissions necessary for its core
-    features to function correctly (for example, displaying notifications for
-    important dates, if this feature is enabled). We do not use any permission to
-    collect or share data with third parties.
-  </p>
+  <div class="section" style="animation-delay: 0.2s;">
+    <h2>2. Government Information & Disclaimer</h2>
+    <p>The App provides general information regarding government holidays and festivals. These lists are sourced directly from official public portals, including:</p>
+    <ul>
+      <li><strong>Bangladesh National Portal:</strong> bangladesh.gov.bd</li>
+      <li><strong>West Bengal Official Portal:</strong> wb.gov.in</li>
+    </ul>
+    <p><strong>Disclaimer:</strong> This App is strictly an independent platform. It is <strong>not affiliated with, endorsed by, or connected to any government entity</strong>. We do not represent any government agency.</p>
+  </div>
 
-  <h2>3. Advertising</h2>
-  <p>
-    The App does <strong>not</strong> currently display any advertisements. The App
-    does not integrate any advertising networks, and no ad-related data collection
-    takes place at this time. If this changes in the future, this Privacy Policy
-    will be updated accordingly, and the update will be reflected here with a new
-    effective date.
-  </p>
+  <div class="section" style="animation-delay: 0.3s;">
+    <h2>3. App Permissions</h2>
+    <p>The App only requests standard, minimal device permissions necessary for core features to function (such as triggering local reminders/notifications for festivals). No permissions are used to track your activity or share data.</p>
+  </div>
 
-  <h2>4. Third-Party Services</h2>
-  <p>
-    The App does not integrate any third-party analytics, tracking, or advertising
-    SDKs. No data from your use of the App is shared with, or sold to, any third
-    party.
-  </p>
+  <div class="section" style="animation-delay: 0.4s;">
+    <h2>4. Advertising & Third-Party Services</h2>
+    <p>The App is completely ad-free and does not integrate any third-party analytics, tracking, or advertising SDKs. Your app usage remains entirely private and is never shared with external servers.</p>
+  </div>
 
-  <h2>5. Children's Privacy</h2>
-  <p>
-    The App does not knowingly collect any information from anyone, including
-    children under the age of 13. Since the App collects no personal data at all,
-    it may be used safely by users of any age.
-  </p>
+  <div class="section" style="animation-delay: 0.5s;">
+    <h2>5. Children's Privacy</h2>
+    <p>Because the App collects absolutely no personal data, it is 100% safe for users of all ages, including children under the age of 13. We do not knowingly solicit data from or market to children.</p>
+  </div>
 
-  <h2>6. Data Security</h2>
-  <p>
-    Because the App does not collect or transmit personal data, there is no
-    user data stored on any external server that could be exposed. All
-    calendar and date calculations happen locally within the App on your device.
-  </p>
-
-  <h2>7. Changes to This Privacy Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time, for example if new
-    features (such as advertisements or optional account features) are introduced
-    in the future. Any changes will be posted on this page with a revised
-    effective date. We encourage you to review this page periodically.
-  </p>
-
-  <div class="contact">
-    <h2>8. Contact Us</h2>
-    <p>
-      If you have any questions or concerns about this Privacy Policy or the
-      App, please feel free to reach out to us:
-    </p>
-    <p style="margin-bottom:0;">
-      Developer: <strong>Malin Sarkar</strong><br>
-      Email: <a href="mailto:malinsarkar3@gmail.com">malinsarkar3@gmail.com</a>
-    </p>
+  <div class="section" style="animation-delay: 0.6s;">
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, we would love to hear from you.</p>
+    <div class="contact-box">
+      <p style="margin-bottom: 5px; color: var(--text-muted);">App Developer:</p>
+      <p style="font-weight: 700; font-size: 20px; color: var(--text-main); margin-bottom: 5px;">Malin Sarkar</p>
+      <a href="mailto:malinsarkar3@gmail.com">malinsarkar3@gmail.com</a>
+    </div>
   </div>
 
   <footer>
-    &copy; 2026 তিথি &ndash; বাংলা পঞ্জিকা. All rights reserved.
+    &copy; 2026 তিথি – বাংলা পঞ্জিকা. All rights reserved.<br>Designed and Developed with ❤️ in India.
   </footer>
-
 </div>
+
 </body>
 </html>
