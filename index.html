@@ -124,6 +124,16 @@
   
   p:last-child { margin-bottom: 0; }
 
+  ul {
+    margin: 0 0 16px;
+    padding-left: 22px;
+    font-size: 16px;
+  }
+  ul:last-child { margin-bottom: 0; }
+  ul li { margin-bottom: 6px; }
+
+  a { color: var(--primary); }
+
   /* Special Highlight Card */
   .highlight-card {
     background: linear-gradient(135deg, var(--primary) 0%, #C0392B 100%);
@@ -177,7 +187,7 @@
       </svg>
     </div>
     <h1>তিথি – বাংলা পঞ্জিকা</h1>
-    <div class="effective-date">Effective Date: August 26, 2026</div>
+    <div class="effective-date">Effective Date: August 26, 2026 &nbsp;|&nbsp; Last Updated: September 2026</div>
   </header>
 
   <p class="intro-text">
@@ -185,9 +195,10 @@
   </p>
 
   <div class="section highlight-card" style="animation-delay: 0.1s;">
-    <h2>1. Zero Data Collection</h2>
-    <p><strong>We do not collect, store, or transmit any personal information.</strong></p>
-    <p>The App does not require you to create an account, log in, or provide any personal details (like name, email, or location). All calendar data is calculated locally on your device.</p>
+    <h2>1. No Personal Data Collection</h2>
+    <p><strong>We do not collect, store, or transmit any personal information from you.</strong></p>
+    <p>The App does not require you to create an account, log in, or provide any personal details (like name, email, or location). Your notes, added festivals, and preferences (theme, language, region, font size) are stored only in a local database on your device — never on any server we control.</p>
+    <p>The App does fetch publicly available content (blog articles, festival/holiday calendars) over the internet, as described in Sections 4 and 5 below — but this never includes anything about you personally.</p>
   </div>
 
   <div class="section" style="animation-delay: 0.2s;">
@@ -202,21 +213,37 @@
 
   <div class="section" style="animation-delay: 0.3s;">
     <h2>3. App Permissions</h2>
-    <p>The App only requests standard, minimal device permissions necessary for core features to function (such as triggering local reminders/notifications for festivals). No permissions are used to track your activity or share data.</p>
+    <p>The App only requests standard, minimal device permissions necessary for core features to function (such as triggering local reminders/notifications for festivals, and internet access for the optional syncing and blog features described below). No permissions are used to track your activity or share data with us.</p>
   </div>
 
   <div class="section" style="animation-delay: 0.4s;">
-    <h2>4. Advertising & Third-Party Services</h2>
-    <p>The App is completely ad-free and does not integrate any third-party analytics, tracking, or advertising SDKs. Your app usage remains entirely private and is never shared with external servers.</p>
+    <h2>4. Blog Content & In-App Browser</h2>
+    <p>The App includes a "Read &amp; Learn" (পড়ুন এবং জানুন) section that fetches publicly available articles from our companion blog at <strong>tithicalendar.blogspot.com</strong>, hosted on Google's Blogger platform. This is a one-way, read-only content fetch — the App does not send any personal data during this process.</p>
+    <p>When you tap a link inside a blog article (for example, a link to another post or a topic label), it opens inside an in-app browser (WebView) rather than leaving the App. Because this loads live web content directly from Blogger/Google's servers, standard web technologies such as cookies may apply there, governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own Privacy Policy</a>, which we do not control.</p>
   </div>
 
   <div class="section" style="animation-delay: 0.5s;">
-    <h2>5. Children's Privacy</h2>
-    <p>Because the App collects absolutely no personal data, it is 100% safe for users of all ages, including children under the age of 13. We do not knowingly solicit data from or market to children.</p>
+    <h2>5. Google Sheets Data Sync</h2>
+    <p>Festival, auspicious-day (শুভ দিন), and eclipse-timing information can optionally be refreshed from publicly published Google Sheets that we maintain. This is a read-only fetch of public calendar data, triggered only when you tap "Sync" — the App does not send any personal or device information during this sync.</p>
   </div>
 
   <div class="section" style="animation-delay: 0.6s;">
-    <h2>6. Contact Us</h2>
+    <h2>6. Advertising & Analytics</h2>
+    <p>The App is completely ad-free and does not integrate any analytics, tracking, or advertising SDKs of our own. Aside from the read-only blog and sheet fetches described above, your app usage remains entirely private and is never shared with external servers by us.</p>
+  </div>
+
+  <div class="section" style="animation-delay: 0.7s;">
+    <h2>7. Children's Privacy</h2>
+    <p>Because the App does not collect any personal data from users, it is safe for users of all ages, including children under the age of 13. We do not knowingly solicit data from or market to children. Please note that the in-app browser described in Section 4 loads content from Blogger/Google, and parents should be aware of Google's own privacy practices for that portion of the experience.</p>
+  </div>
+
+  <div class="section" style="animation-delay: 0.8s;">
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time as the App evolves. Any changes will be reflected on this page with an updated "Last Updated" date above. We encourage you to review this page periodically.</p>
+  </div>
+
+  <div class="section" style="animation-delay: 0.9s;">
+    <h2>9. Contact Us</h2>
     <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, we would love to hear from you.</p>
     <div class="contact-box">
       <p style="margin-bottom: 5px; color: var(--text-muted);">App Developer:</p>
